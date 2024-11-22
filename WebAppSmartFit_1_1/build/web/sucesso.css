@@ -1,0 +1,53 @@
+/* Sucesso CSS */
+.sucesso-container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.sucesso-message {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+}
+
+.sucesso-message h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    padding-left: 30px; /* Adicionando espaçamento para mover para a direita */
+    color: black;
+}
+
+.sucesso-message p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.sucesso-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.sucesso-buttons .btn {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.sucesso-buttons .btn:hover {
+    background-color: #218838;
+}
