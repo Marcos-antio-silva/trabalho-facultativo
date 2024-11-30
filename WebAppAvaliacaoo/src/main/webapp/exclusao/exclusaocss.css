@@ -1,0 +1,22 @@
+/* Exclusão Page Specific */
+body {
+  background-color: #f2dede; /* Cor de fundo suave, para indicar erro ou exclusão */
+}
+
+h1 {
+  color: #e74c3c; /* Cor vermelha para o título de exclusão */
+}
+
+form {
+  background-color: #fff;
+  border: 2px solid #e74c3c; /* Borda vermelha para a exclusão */
+}
+
+input[type="submit"] {
+  background-color: #e74c3c;
+  color: white;
+}
+
+input[type="submit"]:hover {
+  background-color: #c0392b;
+}

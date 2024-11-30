@@ -1,0 +1,259 @@
+/* Corpo e Estrutura */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #f8f9fa, #e3e6f0);
+  color: #2c3e50;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Cabeçalho */
+h1 {
+  color: #2c3e50;
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 20px 0;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagem do Logo */
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 200px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+img:hover {
+  transform: scale(1.15);
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Links de Navegação */
+a {
+  display: inline-block;
+  padding: 15px 30px;
+  margin: 15px auto;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 12px;
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease, box-shadow 0.4s ease;
+}
+
+a:hover,
+a:focus {
+  background: linear-gradient(45deg, #2575fc, #6a11cb);
+  color: #ffffff;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+}
+
+/* Sidebar */
+.sidebar {
+  width: 280px;
+  background: linear-gradient(to bottom, #1c2833, #34495e);
+  color: white;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.sidebar a {
+  color: #bdc3c7;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.sidebar a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  transform: translateX(10px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Botões Toggle */
+.btn-toggle {
+  background-color: transparent;
+  color: white;
+  padding: 12px;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-toggle:hover,
+.btn-toggle:focus {
+  color: #1abc9c;
+  transform: rotate(20deg);
+}
+
+.btn-toggle::before {
+  content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%28255,255,255,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.btn-toggle[aria-expanded="true"]::before {
+  transform: rotate(90deg);
+}
+
+/* Corpo e Estrutura das Telas */
+.container-tela {
+  padding: 30px;
+  background-color: #f4f6f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Cabeçalho das Telas */
+.container-tela h2 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+/* Caixa de Formulário ou Conteúdo */
+.container-tela .formulario,
+.container-tela .consulta,
+.container-tela .outro-conteudo {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Inputs e Campos de Formulário */
+.container-tela input,
+.container-tela select,
+.container-tela textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #dfe4ea;
+  border-radius: 8px;
+  margin: 10px 0;
+  font-size: 1.1rem;
+  color: #2c3e50;
+  background-color: #f8f9fa;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.container-tela input:focus,
+.container-tela select:focus,
+.container-tela textarea:focus {
+  border-color: #2575fc;
+  background-color: #ecf0f1;
+  outline: none;
+}
+
+/* Botões na Tela */
+.container-tela .btn-tela {
+  background-color: #2575fc;
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.container-tela .btn-tela:hover,
+.container-tela .btn-tela:focus {
+  background-color: #1abc9c;
+  transform: translateY(-3px);
+}
+
+.container-tela .btn-tela:active {
+  transform: translateY(1px);
+}
+
+/* Títulos de Sessões ou Subtítulos */
+.container-tela h3 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-weight: 600;
+  text-align: left;
+}
+
+/* Mensagens de Alerta ou Aviso */
+.container-tela .alerta {
+  background-color: #f39c12;
+  color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.container-tela .alerta.sucesso {
+  background-color: #2ecc71;
+}
+
+.container-tela .alerta.erro {
+  background-color: #e74c3c;
+}
+
+/* Scroll Customizado */
+.container-tela .scrollarea {
+  max-height: 400px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #7f8c8d #ecf0f1;
+}
+
+.container-tela .scrollarea::-webkit-scrollbar {
+  width: 8px;
+}
+
+.container-tela .scrollarea::-webkit-scrollbar-thumb {
+  background: #7f8c8d;
+  border-radius: 6px;
+}
+
+.container-tela .scrollarea::-webkit-scrollbar-thumb:hover {
+  background: #95a5a6;
+}

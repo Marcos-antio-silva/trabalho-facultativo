@@ -1,0 +1,22 @@
+/* Consulta Page Specific */
+body {
+  background-color: #d9edf7; /* Cor de fundo azul clara */
+}
+
+h1 {
+  color: #3498db; /* Cor azul para o título */
+}
+
+form {
+  background-color: #fff;
+  border: 2px solid #3498db; /* Borda azul para a consulta */
+}
+
+input[type="submit"] {
+  background-color: #3498db;
+  color: white;
+}
+
+input[type="submit"]:hover {
+  background-color: #2980b9;
+}
